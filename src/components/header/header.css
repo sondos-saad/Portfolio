@@ -1,0 +1,75 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+.header__container h5{
+    font-size: 1rem;
+}
+.header__container h5 a.handIcon{
+    font-size: 1.2rem;
+}
+.header__container h1{
+    font-size: 2.8rem;
+}
+.header__container h5.text-light{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.header__container p{
+    font-size: 1rem;
+    color: var(--color-light);
+}
+/* cta */
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+/* header Social */
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    position: absolute;
+    left: 0;
+    bottom: 12rem;
+}
+.header__socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background-color: var( --color-primary);
+}
+.header__socials a{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+/* scroll down */
+.scroll__down{
+    position: absolute;
+    right: 2rem;
+    bottom: 15rem;
+  
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: .9rem;
+}
+/* media queries*/
+@media screen and (max-width: 600px){
+
+    .header__socials, .scroll__down{
+        display: none; 
+    }
+    .cta{
+        flex-direction: column;
+        align-items: center;
+    }
+}

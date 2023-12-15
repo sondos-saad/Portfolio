@@ -1,0 +1,9 @@
+.logo{
+    padding-top:2rem ;
+}
+.logo h3{
+   font-size: 1.2rem;
+}
+span{
+    color: var(--color-primary);
+}

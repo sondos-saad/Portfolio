@@ -1,0 +1,39 @@
+
+.about__container .education__list li,
+.about__container .experience__list li{
+    list-style-type:circle;
+}
+
+.about__container p{
+    margin: 2rem 0 ;
+    color: var(--color-light);
+}
+.about__container span{
+    background-color: var(--color-bg-variant);
+    padding: 10px;
+    border-radius:0.4rem;
+    display: inline-block;
+    margin-bottom: 1rem ;
+}
+.about__experience{
+    margin-top: 1rem;
+}
+/* media */
+@media screen and (max-width: 600px){
+    .about__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .about__container p{
+        margin: 1.5rem 0 ;
+    }
+}
+@media screen and (max-width: 390px){
+    .about__cards{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .about__container p{
+        margin: 1rem 0 ;
+    }
+}
