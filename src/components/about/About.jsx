@@ -9,9 +9,9 @@ const About = () => {
       }, [])
   return (
       
-        <section id="about" data-aos="fade-left">
+        <section id="about" >
             <h5>Get To Know</h5>
-            <h1>About Me</h1>
+            <h1 data-aos="fade-left">About Me</h1>
             <div className="container about__container">
                 <p>Hello there,<br/> My name is Sondos, I'm a React.js frontend web developer, and i enjoy building everything with JavaScript.
                     <br/> During this duration, i have learned a lot of technologies, created many cool website, and contributed to open-source projects.
@@ -36,14 +36,6 @@ const About = () => {
                         <li>Training front end react at Dragons company (2023).</li>
                     </ul>
                 </div>
-                
-                    <ul>
-                 
-                        
-                       
-                    </ul>
-                
-                <a href="#contact" className="btn btn-primary">Let's Talk</a>
             </div>
         </section>
   )

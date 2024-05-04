@@ -18,16 +18,16 @@
     --color-light: #d7dadc;
 
     --transition: all 400ms ease;
-
-    --container-width-lg:75%;
-    --container-width-md:86%;
-    --container-width-sm:90%;
 }
 html{
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
     display: none;
+}
+::selection{
+    background-color: #3B6978;
+    color: #d7dadc;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -36,7 +36,7 @@ body{
     line-height: 1.7;
 }
 .container{
-    width: var(--container-width-lg);
+    width: 65%;
     margin: 0 auto;
 }
 h1,
@@ -51,8 +51,9 @@ h1{
 }
 section{
     margin-top: 8rem;
-    /* height: 100vh; */
     padding-top: 4rem;
+    overflow: hidden;
+    position: relative;
 }
 section > h1,
 section > h5{
@@ -62,6 +63,16 @@ section > h5{
 section > h1{
     color: var(--color-primary);
     margin-bottom: 3rem;
+}
+section::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: var(--color-light);
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .text-light{
     color: var(--color-light);
@@ -103,19 +114,28 @@ img{
     object-fit: cover;
 }
 /* media queries*/
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1200px) {
     .container{
-        width: var(--container-width-md);
+        width: 80%;
+        margin: 0 auto;
     }
     section{
         margin-top: 6rem;
     }
 }
 @media screen and (max-width: 600px) {
-    .container{
-        width: var(--container-width-sm);
-    }
+   
     section > h2{
         margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 400px){
+    section > h1{
+        font-size: 25px;
+        margin-bottom: 2rem;
+    }
+    section::after{
+        top: 8.5rem;
     }
 }

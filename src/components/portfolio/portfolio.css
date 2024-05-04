@@ -1,48 +1,87 @@
+
 .portfolio__container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-    padding-bottom: 4rem;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    padding: 1rem 0;
 }
 .portfolio__item{
-    background-color: var(--color-bg-variant);
-    padding: 1.3rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     transition: var(--transition);
-    height: 350px;
-    box-shadow: 5px 5px 5px #011d2c ;
+    width: 100%;
+    height: 200px;
+    margin:  0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio__item:nth-child(odd){
+    transform: rotate(0);
+}
+.portfolio__item:nth-child(odd):hover{
+    transform: rotate(-5deg);
 }
 
+
 .portfolio__item_image{
-    border-radius: 1rem;
+    border-radius: .4rem;
     overflow: hidden;
-    height: 50%;
-   
+    height: 100%;
 }
 .portfolio__item_image img{
     height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.portfolio__item .layout__portfolio{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3b6978a7;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+}
+.portfolio__item:hover .layout__portfolio{
+    opacity: 1;
+    transition: var(--transition);
+}
+.portfolio__item:hover .portfolio__item_image img{
+    opacity: .2;
 }
 .portfolio__item h3{
-    margin: 1.2rem 0 2rem;
-    text-align: center;
+    margin-bottom:1rem;
 }
-.portfolio__item_cta{
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 1rem;
-    text-align: center;
-}
+
 /* media queries*/
+@media screen and (min-width: 1300px){
+    .portfolio__container{
+        row-gap: 2rem;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .portfolio__container{
         grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
     }
 }
 @media screen and (max-width: 600px) {
     .portfolio__container{
         grid-template-columns: 1fr ;
-        gap: 1rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .portfolio__item{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 300px){
+    .portfolio__item{
+        height: 250px;
     }
 }

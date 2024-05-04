@@ -1,17 +1,19 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import './services.css'
 import {AiTwotoneCheckCircle} from 'react-icons/ai'
-import imgServices from "../../assets/services.png"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Services = () => {
-    
+    useEffect(() => {
+        AOS.init({duration:1000});
+      }, [])
   return (
     <section id="services" className="services__wrapper">
         <h5>What I Offer</h5>
-        <h1>Services</h1>
+        <h1 data-aos="fade-left">Services</h1>
         <div className="container services__container">
-            <div className="serviceItems" data-aos="fade-right">
+            <div className="serviceItems" >
                 <article className="service">
                     <AiTwotoneCheckCircle className="service-icon"/>
                     <h3>Web Design</h3>
@@ -30,12 +32,14 @@ const Services = () => {
                 </article>
                 <article className="service">
                     <AiTwotoneCheckCircle className="service-icon"/>
+                    <h3>Dashboard</h3>
+                </article>
+                <article className="service">
+                    <AiTwotoneCheckCircle className="service-icon"/>
                     <h3>Problem Solving</h3>
                 </article>
             </div>
-            <div className="serviceImage" data-aos="fade-left">
-                <img src={imgServices} alt="Services"/>
-            </div>
+            
         </div>
     </section>
   )

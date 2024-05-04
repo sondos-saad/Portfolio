@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../assets/Sondosdev-CV-pdf.pdf'
+import CV from '../../assets/SondosjsWebsite.pdf'
 
 const CTA = () => {
   return (

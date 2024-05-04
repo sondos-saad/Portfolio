@@ -1,5 +1,4 @@
 .container.contact__container {
-  width: 58%;
   display: grid;
   grid-template-columns: 30% 58%;
   gap: 12%;
@@ -12,11 +11,10 @@
 .contact__option {
   background-color: var(--color-bg-variant);
   padding: 1rem 0;
-  border-radius: 1.2rem;
+  border-radius: .4rem;
   text-align: center;
   border: 1px solid transparent;
   transition: var(--transition);
- box-shadow: 5px 5px 5px #011d2c;
 }
 .contact__option:hover {
   background-color: transparent;
@@ -41,26 +39,49 @@ form {
   flex-direction: column;
   gap: 1.2rem;
 }
+input{
+    height: 50px;
+}
 input,
 textarea {
   width: 100%;
-  padding: 1.5rem;
-  border-radius:2rem;
+  padding: 1rem;
+  border-radius:1.5rem;
   background: transparent;
   border: 2px solid var(--color-primary-variant);
   resize: none;
   color: var(--color-white);
+  font-size: 17px;
 }
 
 /* media queries*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .container.contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
+    width: 60%;
   }
 }
 @media screen and (max-width: 600px) {
   .container.contact__container {
-    width: var(--container-width-sm);
+    width: 80%;
   }
+}
+@media screen and (max-width: 400px){
+    .contact__option {
+        padding: .7rem 0;
+      }
+      .contact__option_icon {
+        margin-bottom: 0.2rem;
+      }
+      .contact__option a {
+        margin-top: 0.2rem;
+      }
+      form {
+        gap: .7rem;
+      }
+      input,
+      textarea {
+        padding: 1rem;
+      }
 }

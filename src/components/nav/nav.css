@@ -1,6 +1,7 @@
 nav{
     background-color: rgba(0, 0, 0, 0.3);
     width: max-content;
+    margin: 0 auto;
     display: block;
     padding: 0.7rem 1.7rem;
     z-index: 2;
@@ -26,4 +27,39 @@ nav a:hover{
 nav a.active{
     background-color: var(--color-primary);
     color: var(--color-bg);
+}
+
+
+@media screen and (max-width: 500px){
+    nav{
+        width: max-content;
+        margin: 0 auto;
+        padding: 0.7rem;
+        gap: .5rem;
+        left: 50%;
+        transform:  translateX(-50%);
+    }
+}
+@media screen and (max-width: 400px){
+    nav{
+        width: max-content;
+        margin: 0 auto;
+        padding: 0.7rem;
+        gap: .5rem;
+        left: 50%;
+    }
+    nav a{
+        padding: 0.6rem;
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 300px){
+    nav{
+        width: max-content;
+        margin: 0 auto;
+        padding: 0.5rem ;
+        gap: .2rem;
+        left: 50%;
+        transform:  translateX(-50%);
+    }
 }

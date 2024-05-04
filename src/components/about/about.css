@@ -10,20 +10,20 @@
 }
 .about__container span{
     background-color: var(--color-bg-variant);
-    padding: 10px;
+    padding: .5rem;
     border-radius:0.4rem;
     display: inline-block;
     margin-bottom: 1rem ;
+}
+.about__container .education__list,
+.about__container .experience__list{
+    padding:0 1rem;
 }
 .about__experience{
     margin-top: 1rem;
 }
 /* media */
 @media screen and (max-width: 600px){
-    .about__cards{
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
     .about__container p{
         margin: 1.5rem 0 ;
     }

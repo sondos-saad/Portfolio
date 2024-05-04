@@ -1,7 +1,7 @@
 header{
     height: 100vh;
     padding-top: 7rem;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .header__container{
     text-align: center;
@@ -32,6 +32,9 @@ header{
     gap: 1.2rem;
     justify-content: center;
 }
+.cta a:hover{
+    transform: translateX(10px);
+}
 /* header Social */
 .header__socials{
     display: flex;
@@ -55,9 +58,8 @@ header{
 /* scroll down */
 .scroll__down{
     position: absolute;
-    right: 2rem;
-    bottom: 15rem;
-  
+    right: 0;
+    bottom: 19rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: .9rem;
@@ -65,11 +67,20 @@ header{
 /* media queries*/
 @media screen and (max-width: 600px){
 
-    .header__socials, .scroll__down{
+    .header__socials,
+     .scroll__down{
         display: none; 
     }
     .cta{
         flex-direction: column;
         align-items: center;
+    }
+}
+@media screen and (max-width: 300px){
+    header{
+        padding-top: 4rem;
+    }
+    .header__container h1{
+        font-size: 2rem;
     }
 }
