@@ -6,18 +6,22 @@
 
 .about__container p{
     margin: 2rem 0 ;
-    color: var(--color-light);
+    color: var(--text2);
 }
 .about__container span{
-    background-color: var(--color-bg-variant);
+    background: #7e84f03b;
+    color: var( --color);
     padding: .5rem;
     border-radius:0.4rem;
     display: inline-block;
     margin-bottom: 1rem ;
+    margin-top: 1rem ;
+    font-weight: bold;
 }
 .about__container .education__list,
 .about__container .experience__list{
     padding:0 1rem;
+    color: var(--text2);
 }
 .about__experience{
     margin-top: 1rem;

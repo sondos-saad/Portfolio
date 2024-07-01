@@ -11,11 +11,35 @@
 }
 :root{
     --color-bg: #204051;
-    --color-bg-variant:#3b697887;
-    --color-primary: #FFF279;
-    --color-primary-variant: #3B6978;
-    --color-white:rgb(240, 234, 234);
-    --color-light: #d7dadc;
+    --color-bg: #E6DED4;
+    --color-bg: #FCF8F3;
+    --color-bg: #000;
+    --color-bg: #fff;
+    /* --color-bg: #F7F1E5; */
+    /* --color-bg: #EDEAFD; */
+    --color-bg2:#3b697887;
+    --color-bg2:#D5D5D5;
+    /* --color-bg2: linear-gradient(0deg, rgb(243,241,255) 0%, rgb(235,230,255) 100%); */
+    --color-bg2: #698474;
+    --color-bg2: #eee;
+    --color-bg2: #7e84f03b;
+ 
+    --bg-btn: #FFF279;
+    --bg-btn: #858585;
+    --bg-btn: #BFA48D;
+    --bg-btn: #204051;
+    --bg-btn: #640D6B;
+    --bg-btn: #698474;
+    --bg-btn: #fef375;
+    --bg-btn: #7e83f0;
+    --bg-btn-opacity: #7e84f03b;
+    /* --bg-btn-variant: #3B6978; */
+    --color:rgb(240, 234, 234);
+    --color:#000;
+    --text2:#545353;
+   
+     /* --color: #d7dadc;
+     --color: #2A1067; */
 
     --transition: all 400ms ease;
 }
@@ -58,10 +82,10 @@ section{
 section > h1,
 section > h5{
     text-align: center;
-    color: var(--color-light);
+    color: var( --color);
 }
 section > h1{
-    color: var(--color-primary);
+    color: var(--bg-btn);
     margin-bottom: 3rem;
 }
 section::after{
@@ -69,16 +93,16 @@ section::after{
     position: absolute;
     width: 100px;
     height: 2px;
-    background-color: var(--color-light);
+    background-color: var( --color);
     top: 10rem;
     left: 50%;
     transform: translateX(-50%);
 }
 .text-light{
-    color: var(--color-light);
+    color: var(--text2);
 }
 a{
-    color: var(--color-primary);
+    color: var(--bg-btn);
     transition: var(--transition);
 }
 a:hover{
@@ -87,26 +111,26 @@ a:hover{
 .btn{
     width: max-content;
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--bg-btn);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--bg-btn);
     transition: var(--transition);
 }
 .btn:hover{
-    background-color:var(--color-primary) ;
+    background-color:var(--bg-btn) ;
     color: black;
     border-color: transparent;
 }
 .btn-primary{
-    background-color: var(--color-primary);
+    background-color: var(--bg-btn);
     color: black;
 }
 .btn-primary:hover{
     background-color: transparent;
-    border-color: var(--color-primary);
-    color: var(--color-primary);
+    border-color: var(--bg-btn);
+    color: var(--bg-btn);
 }
 img{
     display: block;

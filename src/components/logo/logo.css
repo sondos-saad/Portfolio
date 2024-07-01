@@ -3,7 +3,8 @@
 }
 .logo h3{
    font-size: 1.2rem;
+   color: var( --color);
 }
 span{
-    color: var(--color-primary);
+    color: var(--bg-btn);
 }

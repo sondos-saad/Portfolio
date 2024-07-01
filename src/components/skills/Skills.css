@@ -9,11 +9,13 @@
   display: flex;
   gap: 1rem;
   width:150px ;
-  
+}
+.experience__content .experience__details h3{
+    color: var(--color);
 }
 .experience__details-icon {
   margin-top: 6px;
-  color: var(--color-primary); 
+  color: var(--bg-btn); 
 }
 /* media */
 @media screen and (max-width: 1150px){

@@ -1,7 +1,10 @@
 
 .services__wrapper{
     padding-bottom: 4rem;
-    background-color: var( --color-bg-variant); 
+    background: var( --color-bg2); 
+}
+.services__wrapper h1{
+    color: var(--bg-btn);
 }
 .services__container .serviceItems{
   display: grid;
@@ -9,7 +12,7 @@
   column-gap: 8rem;
 }
 .services__container .service {
-  color: var(--color-white);
+  color: var(--color);
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -18,7 +21,7 @@
 }
 
 .service-icon {
-  color: var(--color-primary);
+  color: var(--bg-btn);
   transition: var(--transition);
 }
 

@@ -71,6 +71,13 @@ const Skills = () => {
                         <small className="text-light">Intermediate</small>
                     </div>
                 </article>
+                <article className="experience__details">
+                    <BsPatchCheckFill className="experience__details-icon"/>
+                    <div>
+                        <h3>ES6</h3>
+                        <small className="text-light">Intermediate</small>
+                    </div>
+                </article>
               
                 <article className="experience__details">
                     <BsPatchCheckFill className="experience__details-icon"/>
@@ -90,6 +97,20 @@ const Skills = () => {
                     <BsPatchCheckFill className="experience__details-icon"/>
                     <div>
                         <h3>NextJs</h3>
+                        <small className="text-light">Intermediate</small>
+                    </div>  
+                </article>
+                <article className="experience__details">
+                    <BsPatchCheckFill className="experience__details-icon"/>
+                    <div>
+                        <h3>API</h3>
+                        <small className="text-light">Intermediate</small>
+                    </div>  
+                </article>
+                <article className="experience__details">
+                    <BsPatchCheckFill className="experience__details-icon"/>
+                    <div>
+                        <h3>Socket-Io</h3>
                         <small className="text-light">Intermediate</small>
                     </div>  
                 </article>

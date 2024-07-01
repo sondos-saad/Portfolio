@@ -32,7 +32,7 @@ const data=[
     {
         id:4,
         image:Photo4,
-        title:'SpecialDesign "HTML,CSS,JS"',
+        title:'SpecialDesign "JS"',
         github:' https://sondos-saad.github.io/SpecialDesignJs/',
     },
     {

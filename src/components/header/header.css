@@ -10,12 +10,14 @@ header{
 }
 .header__container h5{
     font-size: 1rem;
+    color: var(--color);
 }
 .header__container h5 a.handIcon{
     font-size: 1.2rem;
 }
 .header__container h1{
     font-size: 2.8rem;
+    color: var(--color);
 }
 .header__container h5.text-light{
     font-size: 1.3rem;
@@ -23,7 +25,7 @@ header{
 }
 .header__container p{
     font-size: 1rem;
-    color: var(--color-light);
+    color: var(--text2);
 }
 /* cta */
 .cta{
@@ -49,7 +51,7 @@ header{
     content: "";
     width: 1px;
     height: 2rem;
-    background-color: var( --color-primary);
+    background-color: var( --bg-btn);
 }
 .header__socials a{
     cursor: pointer;
