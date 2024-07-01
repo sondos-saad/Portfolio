@@ -10,37 +10,13 @@
     text-decoration: none;
 }
 :root{
-    --color-bg: #204051;
-    --color-bg: #E6DED4;
-    --color-bg: #FCF8F3;
-    --color-bg: #000;
     --color-bg: #fff;
-    /* --color-bg: #F7F1E5; */
-    /* --color-bg: #EDEAFD; */
-    --color-bg2:#3b697887;
-    --color-bg2:#D5D5D5;
-    /* --color-bg2: linear-gradient(0deg, rgb(243,241,255) 0%, rgb(235,230,255) 100%); */
-    --color-bg2: #698474;
-    --color-bg2: #eee;
     --color-bg2: #7e84f03b;
- 
-    --bg-btn: #FFF279;
-    --bg-btn: #858585;
-    --bg-btn: #BFA48D;
-    --bg-btn: #204051;
-    --bg-btn: #640D6B;
-    --bg-btn: #698474;
-    --bg-btn: #fef375;
     --bg-btn: #7e83f0;
     --bg-btn-opacity: #7e84f03b;
-    /* --bg-btn-variant: #3B6978; */
-    --color:rgb(240, 234, 234);
     --color:#000;
     --text2:#545353;
    
-     /* --color: #d7dadc;
-     --color: #2A1067; */
-
     --transition: all 400ms ease;
 }
 html{
