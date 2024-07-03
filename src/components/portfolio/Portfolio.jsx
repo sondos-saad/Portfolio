@@ -1,11 +1,11 @@
 import React,{ useEffect }  from 'react'
 import './portfolio.css'
-import Photo1 from "../../assets/home-page.png"
+import Photo1 from "../../assets/Dashboard.png"
 import Photo2 from "../../assets/LUXCO.png"
 import Photo3 from "../../assets/simple-react.png"
 import Photo4 from "../../assets/SpecialDesign.png"
 import Photo5 from "../../assets/Dorsin.png"
-import Photo6 from "../../assets/ogani.png"
+import Photo6 from "../../assets/plant.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -14,8 +14,8 @@ const data=[
     {
         id:1,
         image:Photo1,
-        title:'IO "HTML,CSS"',
-        github:' https://sondos-saad.github.io/html-css/',
+        title:'Dashboard "js"',
+        github:' https://sondos-saad.github.io/DashboardJs/',
     },
     {
         id:2,
@@ -44,8 +44,8 @@ const data=[
     {
         id:6,
         image:Photo6,
-        title:'Ogani "HTML,CSS"',
-        github:'https://sondos-saad.github.io/origan-website/',
+        title:'Plant "Js"',
+        github:'https://sondos-saad.github.io/PlantsWebSite/',
     },
 ]
 const Portfolio = () => {
