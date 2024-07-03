@@ -19,9 +19,9 @@ const data=[
     },
     {
         id:2,
-        image:Photo2,
-        title:'LUXCO "React JS"',
-        github:'https://sondos-saad.github.io/LUXCO-js/',
+        image:Photo6,
+        title:'Plant "Js"',
+        github:'https://sondos-saad.github.io/PlantsWebSite/',
     },
     {
         id:3,
@@ -43,10 +43,11 @@ const data=[
     },
     {
         id:6,
-        image:Photo6,
-        title:'Plant "Js"',
-        github:'https://sondos-saad.github.io/PlantsWebSite/',
+        image:Photo2,
+        title:'LUXCO "React JS"',
+        github:'https://sondos-saad.github.io/LUXCO-js/',
     },
+   
 ]
 const Portfolio = () => {
     useEffect(() => {
