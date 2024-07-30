@@ -7,6 +7,7 @@ import Portfolio from './components/portfolio/Portfolio.jsx'
 import Contact from './components/contact/Contact.jsx'
 import Footer from './components/footer/Footer.jsx'
 import Logo from './components/logo/Logo.jsx'
+import Skills2 from './components/skills/Skills2.jsx'
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
         <Header/>
         <Nav />
         <About/>
-        <Skills/>
+
+        <Skills2/>
         <Services/>
         <Portfolio/>
         <Contact/>

@@ -51,7 +51,7 @@ header{
     content: "";
     width: 1px;
     height: 2rem;
-    background-color: var( --bg-btn);
+    background-image: var( --bg-btn);
 }
 .header__socials a{
     cursor: pointer;
