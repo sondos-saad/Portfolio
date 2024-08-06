@@ -63,6 +63,7 @@ section > h5{
 section > h1{
     color: var(--bg-btn);
     margin-bottom: 3rem;
+    font-weight: bold;
 }
 section::after{
     content: '';

@@ -4,6 +4,7 @@
 .logo h3{
    font-size: 1.2rem;
    color: var( --color);
+   font-weight: bold;
 }
 span{
     color: var(--bg-btn);

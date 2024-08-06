@@ -1,5 +1,5 @@
 {
-  "name": "portflio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-infinite-logo-slider": "^1.0.13",
-    "react-router-dom": "^6.22.3",
+    "react-router-dom": "^6.26.0",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.0",
     "slick-carousel": "^1.8.1",

@@ -10,7 +10,7 @@ footer a{
 }
 .footer__logo{
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 2rem;
     display:inline-block ;
 }
